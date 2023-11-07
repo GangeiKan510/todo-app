@@ -118,7 +118,7 @@
     "@types/pg": "^8.10.8"
   },
   "scripts": {
-    "start": "npx tsc && nodemon dist/index.js",
+    "start": "npx tsc && nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
