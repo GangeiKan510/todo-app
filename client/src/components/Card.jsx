@@ -8,7 +8,7 @@ const customStyle = {
   padding: '10px',
 };
 
-export default function BasicCard() {
+export default function BasicCard(props) {
   return (
     <Card sx={{ minWidth: 275 }} style={customStyle}>
       <CardContent>
@@ -16,13 +16,13 @@ export default function BasicCard() {
           Date Created: November 7, 2023
         </Typography>
         <Typography variant="h5" component="div">
-          Todoodoo Item
+          {props.title}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Deadline: November 10, 2023
         </Typography>
         <Typography variant="body2">
-          A todo item description.
+          {props.description}
         </Typography>
       </CardContent>
       <ButtonUsage></ButtonUsage>

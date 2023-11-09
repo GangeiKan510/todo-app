@@ -41,7 +41,7 @@ router.put('/update', async (req: Request, res: Response) => {
 
 router.delete('/delete/:id', async (req: Request, res: Response) => {
   try {
-
+ 
     const id = Number(req.params.id);
     await deleteItem(id);
     res.sendStatus(200); 
