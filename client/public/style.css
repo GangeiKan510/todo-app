@@ -1,0 +1,11 @@
+.MuiToolbar-root, .MuiToolbar-gutters, .MuiToolbar-regular, .css-hyum1k-MuiToolbar-root {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto  ;
+}
+
+.css-1s7vz7t-MuiTypography-root {
+  font-family: 'Exo', sans-serif !important;
+  font-family: 'Oxygen', sans-serif !important;
+}

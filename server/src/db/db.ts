@@ -7,6 +7,6 @@ const db = new pg.Client({
   database: process.env.DB_DATABASE,
   host: process.env.DB_HOST,
   port: process.env.PORT ? parseInt(process.env.PORT, 10): undefined
-})
+});
 
-export default db;
+export default db; 

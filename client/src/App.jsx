@@ -1,10 +1,15 @@
-import ButtonUsage from "./components/Button";
+import BasicContainer from '@mui/material/Container';
+import BasicGrid from './components/Grid';
+import DrawerAppBar from './components/NavBar';
 
 function App() {
+
   return (
-    <div>
-      <ButtonUsage></ButtonUsage>
-    </div>
+    <BasicContainer>
+      <DrawerAppBar />
+      <BasicGrid>
+      </BasicGrid>
+    </BasicContainer>
   );
 }
 

@@ -1,18 +1,21 @@
 import bodyParser from 'body-parser';
-import express, { Application, Request, Response } from 'express';
-import todo from './routes/todo';
-import db from './db/connection';
+import express, { Application } from 'express';
+import items from './routes/items';
+import users from './routes/users';
+import db from './db/db';
+require('dotenv').config();
 
 const app: Application = express();
-const PORT = 8080; 
+const PORT = process.env.SERVER_PORT; 
 
 db.connect();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/todo", todo);
+app.use("/items", items);
+app.use("/users", users);
 
-app.listen(PORT, () => {
+app.listen(PORT || 5000, () => {
   console.log("Up and running on port", PORT);
-});
+}); 
