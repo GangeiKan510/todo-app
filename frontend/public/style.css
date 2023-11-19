@@ -9,3 +9,11 @@
   font-family: 'Exo', sans-serif !important;
   font-family: 'Oxygen', sans-serif !important;
 }
+
+.css-i4bv87-MuiSvgIcon-root, .css-bhp9pd-MuiPaper-root-MuiCard-root {
+  text-align: center;
+}
+
+.add-item {
+  background-color: azure !important;
+}

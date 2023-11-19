@@ -18,7 +18,7 @@ router.post('/create', async (req: Request, res: Response) => {
   try {
 
     const {title, description, userId} = req.body;
-    await createItem(title, description, userId);
+    await createItem(title, description, Number(userId));
     res.sendStatus(200);
 
   } catch (error) {
