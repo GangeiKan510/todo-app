@@ -17,3 +17,12 @@
 .add-item {
   background-color: azure !important;
 }
+
+.form-input {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.add-item-input {
+  min-width: 250px;
+}
